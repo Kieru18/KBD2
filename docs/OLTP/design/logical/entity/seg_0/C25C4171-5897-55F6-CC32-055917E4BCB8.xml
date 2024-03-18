@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C25C4171-5897-55F6-CC32-055917E4BCB8" name="kraj_pochodzenia">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:13:50 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="kod_kraju" id="E7ACC67B-CB96-F7B0-F67A-16315B488FEA">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:51:17 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="EEADA404-D532-DFCD-6430-B5BEB09F29D8">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:28:07 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56 CHAR</dataTypeSize>
+<ownDataTypeParameters>56 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BAE001F1-B709-AC7B-A6ED-19E6004FAF76" name="kraj_pochodzenia PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:54:37 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7ACC67B-CB96-F7B0-F67A-16315B488FEA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7975A96D-259E-DC0C-3DBC-C92C0E453357" name="kod_kraju">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:54:53 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<newElementsIDs>EEADA404-D532-DFCD-6430-B5BEB09F29D8</newElementsIDs>
+<usedAttributes>
+<attributeRef>EEADA404-D532-DFCD-6430-B5BEB09F29D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

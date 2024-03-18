@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B466B761-743B-5094-027E-29081D8DD672" name="recenzja">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 17:57:01 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="czas_oceny" id="32F62F5C-D6A7-4699-21FE-F8E9C3922D5D">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:00:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocena_ogolna" id="30DC7C0B-D68F-BA2D-9F9F-F2E1296DCBAA">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:01:40 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="smak" id="39BC2CD7-A4F4-505C-A6E9-8F52E5F64874">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:05:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wyglad" id="FB7C8FEA-91D4-4832-D9ED-9F8AD5CC01A6">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:05:25 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="aromat" id="F19CD7E7-EDB2-B61C-1F35-75BC7F8E55FF">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:19:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_piwa" id="3604BA49-DC56-2B2F-1531-AC42A3E6F530">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:07:40 UTC</createdTime>
+<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>9393A9DD-A9E6-54E6-B13E-7B3849C3AFA1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_3" id="5C8E0540-C0FF-AEB6-E22F-A9220D064195">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:34:52 UTC</createdTime>
+<generatorID>4482D3B4-4692-E674-A262-96EBE4DF296B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>4A84FA28-B045-7A22-4BD1-BDC4969DDF4F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzytkownika" id="BF380D33-48DF-1446-7BEB-06DE62FE18D9">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:34:52 UTC</createdTime>
+<generatorID>4482D3B4-4692-E674-A262-96EBE4DF296B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>011D6A27-EEA7-5146-A5F6-83F6A69B4C6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_browaru" id="99BBA3BF-577B-0F46-1A81-FFBD744C65C5">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 18:22:51 UTC</createdTime>
+<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="komentarz" id="1E6CEE3E-B435-D314-0729-15C4CFC5A36D">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-18 00:08:54 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzytkownika1" id="216D8DED-44B2-5C18-F9F6-B6BC285DC520">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-18 00:21:00 UTC</createdTime>
+<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>864BFACE-5DB7-F400-F673-220CC7822118</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C88C0EAE-6BE4-6D93-4E88-3722587C9117" name="ocena PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:34:44 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5C8E0540-C0FF-AEB6-E22F-A9220D064195</attributeRef>
+<attributeRef>BF380D33-48DF-1446-7BEB-06DE62FE18D9</attributeRef>
+<attributeRef>3604BA49-DC56-2B2F-1531-AC42A3E6F530</attributeRef>
+<attributeRef>99BBA3BF-577B-0F46-1A81-FFBD744C65C5</attributeRef>
+<attributeRef>216D8DED-44B2-5C18-F9F6-B6BC285DC520</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

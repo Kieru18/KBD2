@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="41AF7ACB-3E5E-7098-79CD-F19800F60DE2" name="uzytkownik">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:15:57 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_uzytkownika" id="011D6A27-EEA7-5146-A5F6-83F6A69B4C6A">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:08:46 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="8C3779FF-3903-4BE7-4F6F-A67B56CF5086">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 12:43:50 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plec" id="BEB56FB7-5E6F-C318-1545-B3271702FCAF">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:16:26 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62F749AB-8364-3910-A351-FB7ECC7A60E4" name="UŻYTKOWNIK PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:08:43 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>011D6A27-EEA7-5146-A5F6-83F6A69B4C6A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="87DD27F4-9163-9BD4-C581-4ED7AC63F35C" name="nazwa">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 17:44:42 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<newElementsIDs>8C3779FF-3903-4BE7-4F6F-A67B56CF5086</newElementsIDs>
+<usedAttributes>
+<attributeRef>8C3779FF-3903-4BE7-4F6F-A67B56CF5086</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

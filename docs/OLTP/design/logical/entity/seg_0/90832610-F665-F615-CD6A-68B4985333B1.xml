@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90832610-F665-F615-CD6A-68B4985333B1" name="piwo">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-03-13 18:07:15 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_piwa" id="9393A9DD-A9E6-54E6-B13E-7B3849C3AFA1">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:04:14 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwa" id="8401B1C7-6E17-4929-FD24-2C36A5D8324B">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 12:36:00 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="opis" id="D1E491E2-5FD2-C19F-4278-993C0D434E55">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 12:36:01 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>700 CHAR</dataTypeSize>
+<ownDataTypeParameters>700 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zawartosc_alkoholu" id="CAE5809D-BA6B-E3F3-2B48-0EF02EC4EAA0">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 12:48:05 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zawartosc_ekstraktu" id="C695723D-EB5F-2AA3-6AB1-E359226D3371">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 12:51:36 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="goryczka" id="C7D30262-27FC-ED8F-D7DE-6E503CDF6827">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 13:19:19 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="barwa" id="D55C3C46-30E9-9363-0DA3-1828AC32EFBB">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-14 13:20:53 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zdjecie" id="81F6D3FD-9C92-2355-91C2-7E6AC020E5A8">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-15 21:56:18 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_browaru" id="C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 18:22:51 UTC</createdTime>
+<generatorID>01F233E4-3E57-52E2-FFDB-0842FBF8ABA0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>C490AA60-ED21-A603-4E3E-366FF90D9D0B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzytkownika" id="864BFACE-5DB7-F400-F673-220CC7822118">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-18 00:21:00 UTC</createdTime>
+<generatorID>01F233E4-3E57-52E2-FFDB-0842FBF8ABA0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>736AE9C9-C353-143C-C5F8-4EB8F3254496</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE6493AF-9758-C094-49D8-4E6127E895AE" name="PIWO PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-03-16 15:07:39 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9393A9DD-A9E6-54E6-B13E-7B3849C3AFA1</attributeRef>
+<attributeRef>C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014</attributeRef>
+<attributeRef>864BFACE-5DB7-F400-F673-220CC7822118</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
