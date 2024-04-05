@@ -15,4 +15,34 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_browaru" id="7AC568E6-73A2-27D8-3ADC-05CB968155DE">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 15:26:22 UTC</createdTime>
+<generatorID>F00F6034-8935-1559-1FB2-876BE87EF975</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>C490AA60-ED21-A603-4E3E-366FF90D9D0B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F864E9A9-E38C-6657-609E-6C158E442DE6" name="przedstawiciel_browaru PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 15:26:22 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AC568E6-73A2-27D8-3ADC-05CB968155DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

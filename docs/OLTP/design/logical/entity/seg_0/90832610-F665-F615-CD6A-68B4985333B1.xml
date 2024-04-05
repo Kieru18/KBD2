@@ -137,20 +137,6 @@
 <logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_uzytkownika" id="864BFACE-5DB7-F400-F673-220CC7822118">
-<createdBy>jakub</createdBy>
-<createdTime>2024-03-18 00:21:00 UTC</createdTime>
-<generatorID>01F233E4-3E57-52E2-FFDB-0842FBF8ABA0</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
-</engineerTo>
-<referedAttribute>736AE9C9-C353-143C-C5F8-4EB8F3254496</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BE6493AF-9758-C094-49D8-4E6127E895AE" name="PIWO PK">
@@ -164,7 +150,6 @@
 <usedAttributes>
 <attributeRef>9393A9DD-A9E6-54E6-B13E-7B3849C3AFA1</attributeRef>
 <attributeRef>C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014</attributeRef>
-<attributeRef>864BFACE-5DB7-F400-F673-220CC7822118</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

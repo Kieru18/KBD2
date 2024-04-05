@@ -65,20 +65,6 @@
 <use>1</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_uzytkownika" id="736AE9C9-C353-143C-C5F8-4EB8F3254496">
-<createdBy>jakub</createdBy>
-<createdTime>2024-03-17 21:02:42 UTC</createdTime>
-<generatorID>EBC3EE90-3589-45CB-AD37-EB8D3AD39DD6</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
-</engineerTo>
-<referedAttribute>011D6A27-EEA7-5146-A5F6-83F6A69B4C6A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="64D0209F-2E81-E761-AC9C-8F38E5D78548" name="BROWAR PK">
@@ -91,7 +77,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>C490AA60-ED21-A603-4E3E-366FF90D9D0B</attributeRef>
-<attributeRef>736AE9C9-C353-143C-C5F8-4EB8F3254496</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

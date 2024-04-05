@@ -148,20 +148,6 @@
 <dataTypeSize>2000 CHAR</dataTypeSize>
 <ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_uzytkownika1" id="216D8DED-44B2-5C18-F9F6-B6BC285DC520">
-<createdBy>jakub</createdBy>
-<createdTime>2024-03-18 00:21:00 UTC</createdTime>
-<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<engineerTo>
-<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
-</engineerTo>
-<referedAttribute>864BFACE-5DB7-F400-F673-220CC7822118</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT057</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C88C0EAE-6BE4-6D93-4E88-3722587C9117" name="ocena PK">
@@ -177,7 +163,6 @@
 <attributeRef>BF380D33-48DF-1446-7BEB-06DE62FE18D9</attributeRef>
 <attributeRef>3604BA49-DC56-2B2F-1531-AC42A3E6F530</attributeRef>
 <attributeRef>99BBA3BF-577B-0F46-1A81-FFBD744C65C5</attributeRef>
-<attributeRef>216D8DED-44B2-5C18-F9F6-B6BC285DC520</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
