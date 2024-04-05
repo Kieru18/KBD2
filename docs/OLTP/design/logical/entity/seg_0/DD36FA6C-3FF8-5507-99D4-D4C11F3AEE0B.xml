@@ -40,9 +40,6 @@
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>7AC568E6-73A2-27D8-3ADC-05CB968155DE</attributeRef>
-</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

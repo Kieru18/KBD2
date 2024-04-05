@@ -28,5 +28,34 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_miejscowosci" id="D7E8B6DE-3A2B-E302-16F5-C0B5151D399A">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:13:14 UTC</createdTime>
+<generatorID>AC84433B-7BF7-0F0B-CA28-57BA9EAC3214</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>BAE45AE2-C5BF-4014-529F-9F3B67DD42B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kod_kraju" id="745BF006-3B4B-CC73-6607-F53A6D3DFF3F">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:13:14 UTC</createdTime>
+<generatorID>AC84433B-7BF7-0F0B-CA28-57BA9EAC3214</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>E71FD23C-BC06-C376-9EA3-B994C97BFFDE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 </Entity>

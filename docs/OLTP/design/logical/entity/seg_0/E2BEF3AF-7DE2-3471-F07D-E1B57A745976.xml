@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_stylu" id="71878F55-E07A-A826-6784-09DC3B030BAB">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:00:27 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nazwa" id="A6C6E55D-F447-FF31-ECB6-CCBA80F521C1">
 <createdBy>jakub</createdBy>
 <createdTime>2024-03-16 18:00:30 UTC</createdTime>
@@ -22,12 +34,38 @@
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40 CHAR</dataTypeSize>
 <ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="opis" id="633C62B6-B1D4-CFD1-E0FB-810612A855DE">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 19:59:52 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT050</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C0FA80D-BD95-AD8E-89D5-9CE1034C16D4" name="styl PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:00:40 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71878F55-E07A-A826-6784-09DC3B030BAB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BDD5278C-E1FA-650A-49C4-1ACFFE03A370" name="browar">
-<createdBy>szlukawski</createdBy>
-<createdTime>2024-03-13 18:07:24 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C364C2A0-E11E-39A0-7B25-C2AABD8DDFF0" name="miejscowosc">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:08:15 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_browaru" id="C490AA60-ED21-A603-4E3E-366FF90D9D0B">
+<Attribute name="id_miejscowosci" id="BAE45AE2-C5BF-4014-529F-9F3B67DD42B8">
 <createdBy>jakub</createdBy>
-<createdTime>2024-03-16 18:18:17 UTC</createdTime>
+<createdTime>2024-04-05 20:10:12 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nazwa" id="09CDA7C1-3341-8CB3-85AA-855D7CBB3911">
+<Attribute name="nazwa" id="97C955F5-60F2-2BB4-2BFD-4F91B86CB161">
 <createdBy>jakub</createdBy>
-<createdTime>2024-03-14 13:33:48 UTC</createdTime>
+<createdTime>2024-04-05 20:10:28 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
@@ -37,34 +37,37 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30 CHAR</dataTypeSize>
-<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="data_zalozenia" id="3CADC7CB-66FD-A3C6-08EE-866609EADC07">
+<Attribute name="kod_kraju" id="E71FD23C-BC06-C376-9EA3-B994C97BFFDE">
 <createdBy>jakub</createdBy>
-<createdTime>2024-03-16 17:26:42 UTC</createdTime>
+<createdTime>2024-04-05 20:11:59 UTC</createdTime>
+<generatorID>2109CC45-DE10-7EB8-0676-4B0FA42639BF</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E7ACC67B-CB96-F7B0-F67A-16315B488FEA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="64D0209F-2E81-E761-AC9C-8F38E5D78548" name="BROWAR PK">
+<identifier id="3306F4A8-D39F-C144-74CF-F1638F60A650" name="miejscowosc PK">
 <createdBy>jakub</createdBy>
-<createdTime>2024-03-16 18:22:50 UTC</createdTime>
+<createdTime>2024-04-05 20:10:27 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C490AA60-ED21-A603-4E3E-366FF90D9D0B</attributeRef>
+<attributeRef>BAE45AE2-C5BF-4014-529F-9F3B67DD42B8</attributeRef>
+<attributeRef>E71FD23C-BC06-C376-9EA3-B994C97BFFDE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

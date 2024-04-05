@@ -137,6 +137,20 @@
 <logicalDatatype>LOGDT057</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_stylu" id="2CDC3CFC-E006-1BFC-1320-E1C2A2CE7ED9">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:00:41 UTC</createdTime>
+<generatorID>CDC71640-33EE-66E7-D5BA-4B907ACB7489</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<engineerTo>
+<item key="520F847A-F561-3291-7CAF-94D489B6747B" value="true"/>
+</engineerTo>
+<referedAttribute>71878F55-E07A-A826-6784-09DC3B030BAB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BE6493AF-9758-C094-49D8-4E6127E895AE" name="PIWO PK">
