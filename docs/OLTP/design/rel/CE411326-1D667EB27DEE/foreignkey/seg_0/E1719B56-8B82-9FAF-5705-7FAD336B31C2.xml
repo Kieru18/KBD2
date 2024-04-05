@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1719B56-8B82-9FAF-5705-7FAD336B31C2" containerWithKeyObject="1FF0C568-ECAC-6F6C-2949-743802D4A4C3" localFKIndex="C33C570A-EB8E-EE78-0924-E736636D7BA5" name="recenzja_piwo_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>piwa</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C05E973C-D427-557A-813D-232DE1B9333C</referredTableID>
+<keyObject>CEBF35AA-266B-B7A9-3FF4-34F95ACBF192</keyObject>
+<referredKeyID>CEBF35AA-266B-B7A9-3FF4-34F95ACBF192</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_browaru,numer_piwa</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

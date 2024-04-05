@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2304A079-2741-0CD2-AF09-5D543B5E163E" name="zwykli_uzytkownicy">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>D21EFC19-0E9B-84B2-56CA-1BAB04C77FE9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_uzytkownika" id="042A59E5-FA3C-28C4-D843-73431E04BE9E">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>011D6A27-EEA7-5146-A5F6-83F6A69B4C6A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADB41897-063E-122B-5AD9-F413D199A127" referredColumn="332077DB-85D7-29A8-659F-21745901D896"/>
+</associations>
+</Column>
+<Column name="data_urodzenia" id="D6BFA804-5CC8-3AA7-7C73-35099AFE9F00">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>ACD01429-D719-48A9-BFE1-7094FB1D0F11</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numer_miejscowosci" id="5BAEA0BB-D871-36A6-8262-023CF47E16D2">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>D7E8B6DE-3A2B-E302-16F5-C0B5151D399A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6821FC5A-E0B1-894F-ECDC-2CEF6E377249" referredColumn="099F3E64-1D7F-28D7-9883-A395FC3C8F27"/>
+</associations>
+</Column>
+<Column name="kod_kraju" id="A434A1BD-6E20-57D8-C556-3504CBD9E51D">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>745BF006-3B4B-CC73-6607-F53A6D3DFF3F</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6821FC5A-E0B1-894F-ECDC-2CEF6E377249" referredColumn="0C25FC35-F694-0F70-19A5-EE06027C9198"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="56C556F4-D742-AB3A-7AE8-71242F5244EB" name="zwykły_uzytkownik_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>62F749AB-8364-3910-A351-FB7ECC7A60E4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="042A59E5-FA3C-28C4-D843-73431E04BE9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0AA33CA-EF2A-C420-F80D-04448A05E84B" name="zwykli_uzytkownicy_miejscowosci_FK_I">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 21:22:17 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A434A1BD-6E20-57D8-C556-3504CBD9E51D"/>
+<colUsage columnID="5BAEA0BB-D871-36A6-8262-023CF47E16D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5B6A6EE-90E1-7464-A198-DB581CDFF769" name="zwykły_uzytkownik_uzytkownik_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>F5F195C0-09E9-4FA7-9D5E-1C323D77F923</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="042A59E5-FA3C-28C4-D843-73431E04BE9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F900263-1CD0-041B-59F7-ADCE6EA882C9" name="zwykły_uzytkownik_miejscowosc_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>AC84433B-7BF7-0F0B-CA28-57BA9EAC3214</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A434A1BD-6E20-57D8-C556-3504CBD9E51D"/>
+<colUsage columnID="5BAEA0BB-D871-36A6-8262-023CF47E16D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

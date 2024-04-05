@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DDC3768-E55E-94A2-57E2-8E4653825BBB" name="kraje">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>C25C4171-5897-55F6-CC32-055917E4BCB8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<ordsAlias>kraj</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kod_kraju" id="F79FB56A-0868-2320-520F-1317F1B7AFA5">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>E7ACC67B-CB96-F7B0-F67A-16315B488FEA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="74E8890F-1542-F781-7E01-03C7D703A78E">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>EEADA404-D532-DFCD-6430-B5BEB09F29D8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>56 CHAR</dataTypeSize>
+<ownDataTypeParameters>56 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F8C3E4B-4ECE-58E5-A246-3B777705444A" name="kraj_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>BAE001F1-B709-AC7B-A6ED-19E6004FAF76</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F79FB56A-0868-2320-520F-1317F1B7AFA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD427BBF-7A57-AD49-39C9-13B5B6A9C35C" name="kraj_nazwa_UK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>7975A96D-259E-DC0C-3DBC-C92C0E453357</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74E8890F-1542-F781-7E01-03C7D703A78E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

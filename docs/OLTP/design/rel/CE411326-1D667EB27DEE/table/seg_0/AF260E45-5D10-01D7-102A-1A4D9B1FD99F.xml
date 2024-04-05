@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF260E45-5D10-01D7-102A-1A4D9B1FD99F" name="uzytkownicy">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>41AF7ACB-3E5E-7098-79CD-F19800F60DE2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<ordsAlias>uzytkownik</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_uzytkownika" id="332077DB-85D7-29A8-659F-21745901D896">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>011D6A27-EEA7-5146-A5F6-83F6A69B4C6A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="85B4AD8A-0EB5-B779-146C-6BDA660C7768">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>8C3779FF-3903-4BE7-4F6F-A67B56CF5086</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plec" id="36834687-A112-A780-98BA-6C4490AA792E">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>BEB56FB7-5E6F-C318-1545-B3271702FCAF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AEC706EC-F856-EC99-503F-3A2D1A7CBE01" name="uzytkownik_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>62F749AB-8364-3910-A351-FB7ECC7A60E4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="332077DB-85D7-29A8-659F-21745901D896"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CC2C137-8A43-8414-6745-039396253A04" name="uzytkownik_nazwa_UK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>87DD27F4-9163-9BD4-C581-4ED7AC63F35C</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85B4AD8A-0EB5-B779-146C-6BDA660C7768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="uzytkownicy_plec_CHK" directorySegmentName="seg_0" id="CBCF9117-3E4D-523E-2425-4D9597FE0261">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:57:32 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<rule><![CDATA[CHECK plec IN ('K', 'M')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

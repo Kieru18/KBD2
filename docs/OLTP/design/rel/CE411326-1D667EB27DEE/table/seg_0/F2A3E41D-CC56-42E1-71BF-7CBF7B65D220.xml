@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2A3E41D-CC56-42E1-71BF-7CBF7B65D220" name="miejscowosci">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>C364C2A0-E11E-39A0-7B25-C2AABD8DDFF0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<ordsAlias>miejscowosc</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numer_miejscowosci" id="099F3E64-1D7F-28D7-9883-A395FC3C8F27">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>BAE45AE2-C5BF-4014-529F-9F3B67DD42B8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="C9A3C1C8-3EB7-F3D8-430A-B18B50F8F61B">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>97C955F5-60F2-2BB4-2BFD-4F91B86CB161</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kod_kraju" id="0C25FC35-F694-0F70-19A5-EE06027C9198">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>E71FD23C-BC06-C376-9EA3-B994C97BFFDE</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2482C3CD-2E91-44C6-F6EF-4F12DB84FB91" referredColumn="F79FB56A-0868-2320-520F-1317F1B7AFA5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94F93628-7989-19DE-4002-7784DDA55756" name="miejscowosc_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>3306F4A8-D39F-C144-74CF-F1638F60A650</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C25FC35-F694-0F70-19A5-EE06027C9198"/>
+<colUsage columnID="099F3E64-1D7F-28D7-9883-A395FC3C8F27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="371C2514-38A2-333A-7BED-C6E0EDC6E315" name="miejscowosc_kraj_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>2109CC45-DE10-7EB8-0676-4B0FA42639BF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C25FC35-F694-0F70-19A5-EE06027C9198"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

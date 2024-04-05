@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="63BBD1D7-271E-4829-46A4-BAE82BD106CC" containerWithKeyObject="C05E973C-D427-557A-813D-232DE1B9333C" localFKIndex="5B380BA0-7D89-ED0F-AB70-049C99BA2AC1" name="piwo_styl_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>CDC71640-33EE-66E7-D5BA-4B907ACB7489</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<referredTableLongName>style</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8CA11071-5E66-A85E-237A-C47248AE8139</referredTableID>
+<keyObject>E2BEE38D-40ED-03FF-FD91-29E9D698FEBA</keyObject>
+<referredKeyID>E2BEE38D-40ED-03FF-FD91-29E9D698FEBA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_stylu</refColNames>
+<transferable>false</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

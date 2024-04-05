@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FF0C568-ECAC-6F6C-2949-743802D4A4C3" name="recenzje">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>B466B761-743B-5094-027E-29081D8DD672</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<ordsAlias>recenzja</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="czas_oceny" id="4AE5151F-0698-186F-4830-9CC4B4C01ECC">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>32F62F5C-D6A7-4699-21FE-F8E9C3922D5D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocena_ogolna" id="5D128588-FABB-F783-C6A5-796306339527">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>30DC7C0B-D68F-BA2D-9F9F-F2E1296DCBAA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="smak" id="2AC95C94-810F-FA09-C57B-4E6A20D9BDEE">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>39BC2CD7-A4F4-505C-A6E9-8F52E5F64874</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wyglad" id="861F3577-AA58-833B-5F8B-143FA2385090">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>FB7C8FEA-91D4-4832-D9ED-9F8AD5CC01A6</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aromat" id="8EA5CD82-C32F-8976-75A1-51BB45B5BB31">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>F19CD7E7-EDB2-B61C-1F35-75BC7F8E55FF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_uzytkownika" id="E25E3472-8165-11CB-9287-3F4EA30A70E7">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>BF380D33-48DF-1446-7BEB-06DE62FE18D9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6D874B4-4DB0-DDB6-808E-5FB48A854D68" referredColumn="332077DB-85D7-29A8-659F-21745901D896"/>
+</associations>
+</Column>
+<Column name="id_browaru" id="905A9E47-CE42-1082-7E0B-80A20F007FCF">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>99BBA3BF-577B-0F46-1A81-FFBD744C65C5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="FD89310F-42B6-1820-E109-3D00865B8E1F"/>
+</associations>
+</Column>
+<Column name="numer_piwa" id="516F0FF3-DF22-EE18-603B-4D10AC683EB9">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>3604BA49-DC56-2B2F-1531-AC42A3E6F530</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="522AA55F-27E9-A98A-D1C2-5229CA6309D8"/>
+</associations>
+</Column>
+<Column name="komentarz" id="BCCFC34E-3E1E-5382-23F5-AAD8AF47F53D">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>1E6CEE3E-B435-D314-0729-15C4CFC5A36D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 CHAR</dataTypeSize>
+<ownDataTypeParameters>2000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31512CA8-596E-9EC8-D862-2DD666F68B8C" name="recenzja_PK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>C88C0EAE-6BE4-6D93-4E88-3722587C9117</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E25E3472-8165-11CB-9287-3F4EA30A70E7"/>
+<colUsage columnID="905A9E47-CE42-1082-7E0B-80A20F007FCF"/>
+<colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60163655-7888-901A-442E-40DCB84FB340" name="recenzje_piwa_FK_I">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 21:01:29 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="905A9E47-CE42-1082-7E0B-80A20F007FCF"/>
+<colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C33C570A-EB8E-EE78-0924-E736636D7BA5" name="recenzja_piwo_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="905A9E47-CE42-1082-7E0B-80A20F007FCF"/>
+<colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2341BAC9-F219-2681-9DB3-CCBEF32008E8" name="recenzja_uzytkownik_FK">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>4482D3B4-4692-E674-A262-96EBE4DF296B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E25E3472-8165-11CB-9287-3F4EA30A70E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
