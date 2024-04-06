@@ -2,7 +2,6 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB21A266-A556-3699-AF98-FEEA84AED5A2" name="browary">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[@TODO - fix kraje FK]]></commentInRDBMS>
 <generatorID>BDD5278C-E1FA-650A-49C4-1ACFFE03A370</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <ordsAlias>browar</ordsAlias>
@@ -55,8 +54,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>3 CHAR</dataTypeSize>
-<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D0C32F3-AA28-D7D5-C760-03131F2E891E" referredColumn="F79FB56A-0868-2320-520F-1317F1B7AFA5"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -72,6 +74,15 @@
 <colUsage columnID="F0343C4C-F2C1-2E69-F03D-8BBC7174C9DD"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="409F18B0-E2D6-1755-E7DB-7C208E421F75" name="browary_kraje_FK_I">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 16:11:36 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC7CF231-857C-68C4-D594-0D530E141EF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="A80D203B-298E-D015-2329-21BE288EB936" name="browar_kraj_FK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
@@ -79,6 +90,9 @@
 <ownerDesignName>design</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC7CF231-857C-68C4-D594-0D530E141EF6"/>
+</indexColumnUsage>
 </ind_PK_UK>
 </indexes>
 </Table>
