@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADB41897-063E-122B-5AD9-F413D199A127" containerWithKeyObject="2304A079-2741-0CD2-AF09-5D543B5E163E" localFKIndex="E5B6A6EE-90E1-7464-A198-DB581CDFF769" name="zwykły_uzytkownik_uzytkownik_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADB41897-063E-122B-5AD9-F413D199A127" containerWithKeyObject="2304A079-2741-0CD2-AF09-5D543B5E163E" localFKIndex="E5B6A6EE-90E1-7464-A198-DB581CDFF769" name="uzytkownicy_konta_FK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>F5F195C0-09E9-4FA7-9D5E-1C323D77F923</generatorID>
 <ownerDesignName>design</ownerDesignName>
-<referredTableLongName>uzytkownicy</referredTableLongName>
+<referredTableLongName>konta</referredTableLongName>
 <arc>DABAE923-04A4-0FCF-639A-1B18440838A8</arc>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>AF260E45-5D10-01D7-102A-1A4D9B1FD99F</referredTableID>
 <keyObject>AEC706EC-F856-EC99-503F-3A2D1A7CBE01</keyObject>
 <referredKeyID>AEC706EC-F856-EC99-503F-3A2D1A7CBE01</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>id_uzytkownika</refColNames>
+<refColNames>id_konta</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

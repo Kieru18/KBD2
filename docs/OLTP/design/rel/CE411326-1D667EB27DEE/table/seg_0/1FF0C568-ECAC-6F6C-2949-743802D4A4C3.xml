@@ -132,7 +132,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="31512CA8-596E-9EC8-D862-2DD666F68B8C" name="recenzja_PK">
+<ind_PK_UK id="31512CA8-596E-9EC8-D862-2DD666F68B8C" name="recenzje_PK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>C88C0EAE-6BE4-6D93-4E88-3722587C9117</generatorID>
@@ -156,7 +156,7 @@
 <colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C33C570A-EB8E-EE78-0924-E736636D7BA5" name="recenzja_piwo_FK">
+<ind_PK_UK id="C33C570A-EB8E-EE78-0924-E736636D7BA5" name="recenzje_piwa_FK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>21B2549C-B1DE-8390-08CA-4B542993D2EB</generatorID>
@@ -168,7 +168,7 @@
 <colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2341BAC9-F219-2681-9DB3-CCBEF32008E8" name="recenzja_uzytkownik_FK">
+<ind_PK_UK id="2341BAC9-F219-2681-9DB3-CCBEF32008E8" name="recenzje_uzytkownicy_FK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>4482D3B4-4692-E674-A262-96EBE4DF296B</generatorID>

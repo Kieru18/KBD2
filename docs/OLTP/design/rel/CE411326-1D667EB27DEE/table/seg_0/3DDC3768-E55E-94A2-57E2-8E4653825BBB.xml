@@ -35,7 +35,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2F8C3E4B-4ECE-58E5-A246-3B777705444A" name="kraj_PK">
+<ind_PK_UK id="2F8C3E4B-4ECE-58E5-A246-3B777705444A" name="kraje_PK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>BAE001F1-B709-AC7B-A6ED-19E6004FAF76</generatorID>
@@ -47,7 +47,7 @@
 <colUsage columnID="F79FB56A-0868-2320-520F-1317F1B7AFA5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FD427BBF-7A57-AD49-39C9-13B5B6A9C35C" name="kraj_nazwa_UK">
+<ind_PK_UK id="FD427BBF-7A57-AD49-39C9-13B5B6A9C35C" name="kraje_nazwa_UK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>7975A96D-259E-DC0C-3DBC-C92C0E453357</generatorID>
