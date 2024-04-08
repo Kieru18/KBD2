@@ -30,5 +30,13 @@ BEGIN
     v_sql := 'DROP SEQUENCE ' || v_object_name;
     EXECUTE IMMEDIATE v_sql;
   END LOOP;
+
+  -- Drop all views
+  FOR vw IN (SELECT view_name FROM all_views WHERE owner = v_schema_owner) LOOP
+    v_object_name := vw.view_name;
+    v_sql := 'DROP VIEW ' || v_object_name;
+    EXECUTE IMMEDIATE v_sql;
+  END LOOP;
+
 END;
 /
