@@ -345,4 +345,7 @@ CREATE OR REPLACE VIEW moje_recenzje_piwa AS
         JOIN browary b on p.id_browaru = b.id_browaru
         JOIN konta k on r.id_uzytkownika = k.id_konta
 WHERE k.id_konta = USER;
+
+COMMENT ON COLUMN moje_recenzje_piwa IS 'Perspektywa umożliwiająca użytkownikowi przejrzenie (tylko) własnych ocen piw.';
+
 /
