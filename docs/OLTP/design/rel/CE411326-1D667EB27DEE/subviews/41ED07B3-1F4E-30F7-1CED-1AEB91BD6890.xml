@@ -38,7 +38,7 @@
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="8F2C1C09-4E33-3A3C-D492-528C6E53BE88" otype="Note" vid="F87F742C-67B1-AB80-C52E-C172DEE3BB6B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="53" y="26" width="293" height="48"/>
-<comment>Zespół numer1
+<comment>Zespół numer 1
 Recenz.io - Portal do recenzjonowania piwa</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="99C9D578-AD05-1AF6-BE4C-B5538743E60A" otype="Table" vid="2C8B1F24-6F35-8717-9F57-6DB9D24666F5">
