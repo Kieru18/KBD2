@@ -7,7 +7,7 @@ CREATE TABLE browary (
     kod_kraju      VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE browary IS 'Browary, których piwa dostêpne w systemie Recenz.io';
+COMMENT ON TABLE browary IS 'Browary, ktÃ³rych piwa dostÄ™pne w systemie Recenz.io';
 
 CREATE INDEX browary_kraje_fk_i ON
     browary (
@@ -22,7 +22,7 @@ CREATE TABLE konta (
     typ      CHAR(10 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE konta IS 'Konta wszystkich u¿ytkowników (prywatnych i komercyjnych) systemu Recenz.io';
+COMMENT ON TABLE konta IS 'Konta wszystkich uÅ¼ytkownikÃ³w (prywatnych i komercyjnych) systemu Recenz.io';
 
 ALTER TABLE konta
     ADD CONSTRAINT typ_konta_arc_lov CHECK ( typ IN ( 'piwowar', 'uzytkownik' ) );
@@ -38,7 +38,7 @@ CREATE TABLE kraje (
 ) ORGANIZATION INDEX 
   TABLESPACE KBD2_3;
   
-COMMENT ON TABLE kraje IS 'Tabela s³ownikowa pomagaj¹ca lokalizowaæ browary i miejscowoœci';
+COMMENT ON TABLE kraje IS 'Tabela sï¿½ownikowa pomagajÄ…ca lokalizowaÄ‡ browary i miejscowoÅ›ci';
 COMMENT ON COLUMN kraje.kod_kraju IS 'Kod kraju zdefiniowany w standardzie ISO 3166-1 alfa-3';
 
 ALTER TABLE kraje ADD CONSTRAINT kraje_nazwa_uk UNIQUE ( nazwa );
@@ -49,7 +49,7 @@ CREATE TABLE miejscowosci (
     kod_kraju          VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE miejscowosci IS 'Tabela grupuj¹ca u¿ytkowników w danej lokalizacji';
+COMMENT ON TABLE miejscowosci IS 'Tabela grupujÄ…ca uÅ¼ytkownikÃ³w w danej lokalizacji';
 
 ALTER TABLE miejscowosci ADD CONSTRAINT miejscowosci_pk PRIMARY KEY ( kod_kraju,
                                                                       numer_miejscowosci );
@@ -67,11 +67,11 @@ CREATE TABLE piwa (
     id_stylu            NUMBER(4) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE piwa IS 'Piwa dostêpne do oceny w systemie Recenz.io';
-COMMENT ON COLUMN piwa.zawartosc_alkoholu IS 'Zawartoœæ alkoholu mierzona w ABV - procentach objêtoœciowych';
-COMMENT ON COLUMN piwa.zawartosc_ekstraktu IS 'Zawartoœæ ekstraktu mierzona w stopniach Ballinga';
-COMMENT ON COLUMN piwa.goryczka IS 'Goryczka wyra¿ona w IBU (International Bitterness Unit)';
-COMMENT ON COLUMN piwa.barwa IS 'Barwa wyra¿ona w EBC (European Brewery Convention)';
+COMMENT ON TABLE piwa IS 'Piwa dostÄ™pne do oceny w systemie Recenz.io';
+COMMENT ON COLUMN piwa.zawartosc_alkoholu IS 'ZawartoÅ›Ä‡ alkoholu mierzona w ABV - procentach objÄ™toÅ›ciowych';
+COMMENT ON COLUMN piwa.zawartosc_ekstraktu IS 'ZawartoÅ›Ä‡ ekstraktu mierzona w stopniach Ballinga';
+COMMENT ON COLUMN piwa.goryczka IS 'Goryczka wyraÅ¼ona w IBU (International Bitterness Unit)';
+COMMENT ON COLUMN piwa.barwa IS 'Barwa wyraÅ¼ona w EBC (European Brewery Convention)';
 
 
 CREATE INDEX piwa_style_fk_i ON
@@ -87,7 +87,7 @@ CREATE TABLE piwowarzy (
     id_browaru NUMBER(4) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE piwowarzy IS 'U¿ytkownicy komercyjni reprezentuj¹cy browary';
+COMMENT ON TABLE piwowarzy IS 'UÅ¼ytkownicy komercyjni reprezentujÄ…cy browary';
 
 CREATE INDEX piwowarzy_browary_fk_i ON
     piwowarzy (
@@ -108,7 +108,7 @@ CREATE TABLE recenzje (
     komentarz      VARCHAR2(2000 CHAR)
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE recenzje IS 'Oceny liczbowe i komentarz wystawiany piwom przez u¿ytkowników';
+COMMENT ON TABLE recenzje IS 'Oceny liczbowe i komentarz wystawiany piwom przez uÅ¼ytkownikÃ³w';
 
 CREATE INDEX recenzje_piwa_fk_i ON
     recenzje (
@@ -134,7 +134,7 @@ LOGGING XMLTYPE COLUMN opis STORE AS BINARY XML (
     NOCACHE
 );
 
-COMMENT ON TABLE style IS 'Gatunki / style do którego nale¿y dane piwo';
+COMMENT ON TABLE style IS 'Gatunki / style do ktÃ³rego naleÅ¼y dane piwo';
 
 ALTER TABLE style ADD CONSTRAINT style_pk PRIMARY KEY ( id_stylu );
 
@@ -146,7 +146,7 @@ CREATE TABLE uzytkownicy (
     kod_kraju          VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
 
-COMMENT ON TABLE uzytkownicy IS 'Uzytkownicy prywatni aplikacji Recenz.io';
+COMMENT ON TABLE uzytkownicy IS 'UÅ¼ytkownicy prywatni aplikacji Recenz.io';
 
 CREATE INDEX uzytkownicy_miejscowosci_fk_i ON
     uzytkownicy (
@@ -327,4 +327,25 @@ CREATE OR REPLACE TRIGGER style_id_stylu_trg BEFORE
 BEGIN
     :new.id_stylu := style_id_stylu_seq.nextval;
 END;
+/
+
+-- Views 
+
+CREATE OR REPLACE VIEW moje_recenzje_piwa AS
+    SELECT r.czas_recenzji AS czas_recenzji,
+           p.nazwa AS nazwa_piwa, 
+           b.nazwa AS nazwa_browaru, 
+           r.ocena_ogolna AS ocena_ogolna, 
+           r.smak AS smak, 
+           r.wyglad AS wyglad, 
+           r.aromat AS aromat, 
+           r.komentarz AS komentarz 
+        FROM recenzje r
+        JOIN piwa p on r.numer_piwa = p.numer_piwa
+        JOIN browary b on p.id_browaru = b.id_browaru
+        JOIN konta k on r.id_uzytkownika = k.id_konta
+WHERE k.id_konta = USER;
+
+COMMENT ON VIEW moje_recenzje_piwa IS 'Perspektywa umoÅ¼liwiajÄ…ca uÅ¼ytkownikowi przejrzenie (tylko) wÅ‚asnych ocen piw.';
+
 /
