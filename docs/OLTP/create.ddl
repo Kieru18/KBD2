@@ -25,7 +25,7 @@ CREATE TABLE konta (
 COMMENT ON TABLE konta IS 'Konta wszystkich użytkowników (prywatnych i komercyjnych) systemu Recenz.io';
 
 ALTER TABLE konta
-    ADD CONSTRAINT typ_konta_arc_lov CHECK ( typ IN ( 'piwowar', 'uzytkownik' ) );
+    ADD CONSTRAINT typ_konta_arc_lov_chk CHECK ( typ IN ( 'piwowar', 'uzytkownik' ) );
 
 ALTER TABLE konta ADD CONSTRAINT konta_pk PRIMARY KEY ( id_konta );
 
