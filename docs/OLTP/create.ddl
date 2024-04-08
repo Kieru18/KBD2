@@ -1,4 +1,4 @@
--- Tables, PKs, indexes, UK, declarative constraints (checks, UKs)
+-- Tables, PKs, indexes, UK, declarative constraints (checks, UKs), comments
 
 CREATE TABLE browary (
     id_browaru     NUMBER(4) NOT NULL,
@@ -6,6 +6,8 @@ CREATE TABLE browary (
     data_zalozenia DATE,
     kod_kraju      VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
+
+COMMENT ON TABLE browary IS 'Browary, których piwa dostêpne w systemie Recenz.io';
 
 CREATE INDEX browary_kraje_fk_i ON
     browary (
@@ -20,6 +22,8 @@ CREATE TABLE konta (
     typ      CHAR(10 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
 
+COMMENT ON TABLE konta IS 'Konta wszystkich u¿ytkowników (prywatnych i komercyjnych) systemu Recenz.io';
+
 ALTER TABLE konta
     ADD CONSTRAINT typ_konta_arc_lov CHECK ( typ IN ( 'piwowar', 'uzytkownik' ) );
 
@@ -32,6 +36,9 @@ CREATE TABLE kraje (
     nazwa     VARCHAR2(56 CHAR) NOT NULL
 ) ORGANIZATION INDEX 
   TABLESPACE KBD2_3;
+  
+COMMENT ON TABLE kraje IS 'Tabela s³ownikowa pomagaj¹ca lokalizowaæ browary i miejscowoœci';
+COMMENT ON COLUMN kraje.kod_kraju IS 'Kod kraju zdefiniowany w standardzie ISO 3166-1 alfa-3';
 
 ALTER TABLE kraje ADD CONSTRAINT kraje_pk PRIMARY KEY ( kod_kraju );
 
@@ -42,6 +49,8 @@ CREATE TABLE miejscowosci (
     nazwa              VARCHAR2(35) NOT NULL,
     kod_kraju          VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
+
+COMMENT ON TABLE miejscowosci IS 'Tabela grupuj¹ca u¿ytkowników w danej lokalizacji';
 
 ALTER TABLE miejscowosci ADD CONSTRAINT miejscowosci_pk PRIMARY KEY ( kod_kraju,
                                                                       numer_miejscowosci );
@@ -59,6 +68,8 @@ CREATE TABLE piwa (
     id_stylu            NUMBER(4) NOT NULL
 ) TABLESPACE KBD2_3;
 
+COMMENT ON TABLE piwa IS 'Piwa dostêpne do oceny w systemie Recenz.io';
+
 CREATE INDEX piwa_style_fk_i ON
     piwa (
         id_stylu
@@ -71,6 +82,8 @@ CREATE TABLE piwowarzy (
     id_konta   NUMBER(4) NOT NULL,
     id_browaru NUMBER(4) NOT NULL
 ) TABLESPACE KBD2_3;
+
+COMMENT ON TABLE piwowarzy IS 'U¿ytkownicy komercyjni reprezentuj¹cy browary';
 
 CREATE INDEX piwowarzy_browary_fk_i ON
     piwowarzy (
@@ -90,6 +103,8 @@ CREATE TABLE recenzje (
     numer_piwa     NUMBER(4) NOT NULL,
     komentarz      VARCHAR2(2000 CHAR)
 ) TABLESPACE KBD2_3;
+
+COMMENT ON TABLE recenzje IS 'Oceny liczbowe i komentarz wystawiany piwom przez u¿ytkowników';
 
 CREATE INDEX recenzje_piwa_fk_i ON
     recenzje (
@@ -115,6 +130,8 @@ LOGGING XMLTYPE COLUMN opis STORE AS BINARY XML (
     NOCACHE
 );
 
+COMMENT ON TABLE style IS 'Gatunki / style do którego nale¿y dane piwo';
+
 ALTER TABLE style ADD CONSTRAINT style_pk PRIMARY KEY ( id_stylu );
 
 CREATE TABLE uzytkownicy (
@@ -124,6 +141,8 @@ CREATE TABLE uzytkownicy (
     numer_miejscowosci NUMBER(4) NOT NULL,
     kod_kraju          VARCHAR2(3 CHAR) NOT NULL
 ) TABLESPACE KBD2_3;
+
+COMMENT ON TABLE uzytkownicy IS 'Uzytkownicy prywatni aplikacji Recenz.io';
 
 CREATE INDEX uzytkownicy_miejscowosci_fk_i ON
     uzytkownicy (
