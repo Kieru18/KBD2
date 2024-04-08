@@ -33,14 +33,13 @@ ALTER TABLE konta ADD CONSTRAINT konta_nazwa_uk UNIQUE ( nazwa );
 
 CREATE TABLE kraje (
     kod_kraju VARCHAR2(3 CHAR) NOT NULL,
-    nazwa     VARCHAR2(56 CHAR) NOT NULL
+    nazwa     VARCHAR2(56 CHAR) NOT NULL,
+    CONSTRAINT kraje_pk PRIMARY KEY ( kod_kraju )
 ) ORGANIZATION INDEX 
   TABLESPACE KBD2_3;
   
 COMMENT ON TABLE kraje IS 'Tabela s³ownikowa pomagaj¹ca lokalizowaæ browary i miejscowoœci';
 COMMENT ON COLUMN kraje.kod_kraju IS 'Kod kraju zdefiniowany w standardzie ISO 3166-1 alfa-3';
-
-ALTER TABLE kraje ADD CONSTRAINT kraje_pk PRIMARY KEY ( kod_kraju );
 
 ALTER TABLE kraje ADD CONSTRAINT kraje_nazwa_uk UNIQUE ( nazwa );
 
@@ -69,6 +68,11 @@ CREATE TABLE piwa (
 ) TABLESPACE KBD2_3;
 
 COMMENT ON TABLE piwa IS 'Piwa dostêpne do oceny w systemie Recenz.io';
+COMMENT ON COLUMN piwa.zawartosc_alkoholu IS 'Zawartoœæ alkoholu mierzona w ABV - procentach objêtoœciowych';
+COMMENT ON COLUMN piwa.zawartosc_ekstraktu IS 'Zawartoœæ ekstraktu mierzona w stopniach Ballinga';
+COMMENT ON COLUMN piwa.goryczka IS 'Goryczka wyra¿ona w IBU (International Bitterness Unit)';
+COMMENT ON COLUMN piwa.barwa IS 'Barwa wyra¿ona w EBC (European Brewery Convention)';
+
 
 CREATE INDEX piwa_style_fk_i ON
     piwa (
