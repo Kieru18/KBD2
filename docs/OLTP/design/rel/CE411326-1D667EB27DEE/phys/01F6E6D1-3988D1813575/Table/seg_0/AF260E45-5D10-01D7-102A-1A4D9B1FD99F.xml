@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="konta" directorySegmentName="seg_0" id="AF260E45-5D10-01D7-102A-1A4D9B1FD99F">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_konta" id="332077DB-85D7-29A8-659F-21745901D896">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazwa" id="85B4AD8A-0EB5-B779-146C-6BDA660C7768">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="typ" id="CE4039A3-4563-0739-09AB-92A147488F16">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:52:20 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="konta_PK" id="AEC706EC-F856-EC99-503F-3A2D1A7CBE01">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="konta_nazwa_UK" id="5CC2C137-8A43-8414-6745-039396253A04">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

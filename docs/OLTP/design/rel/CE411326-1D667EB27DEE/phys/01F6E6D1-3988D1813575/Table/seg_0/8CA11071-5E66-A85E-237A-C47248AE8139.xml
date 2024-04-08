@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="style" directorySegmentName="seg_0" id="8CA11071-5E66-A85E-237A-C47248AE8139">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_stylu" id="124E5572-473B-BF20-88BF-F252331C929F">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nazwa" id="B6FE00AD-5229-E553-DE94-DAEA17060C72">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="opis" id="DBC0840D-841E-C709-11D8-271FAFFC8698">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<cache>NOCACHE</cache>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="style_PK" id="E2BEE38D-40ED-03FF-FD91-29E9D698FEBA">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
