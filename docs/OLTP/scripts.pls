@@ -2,42 +2,41 @@ CREATE OR REPLACE TRIGGER check_if_legal_age
 BEFORE INSERT ON uzytkownicy
 FOR EACH ROW
 /* 
-Wyzwalacz sprawdzaj¹cy, czy dodawny u¿ytkownik jest pe³noletni.
-Ze wglêdu na tematykê systemu, niepe³noletni u¿ytkownicy nie mog¹ z niej korzystaæ.
-@TODO - sprawdzanie co do dnia
+Wyzwalacz sprawdzajÄ…cy, czy dodawny uÅ¼ytkownik jest peÅ‚noletni.
+Ze wglÄ™du na tematykÄ™ systemu, niepeÅ‚noletni uÅ¼ytkownicy nie mogÄ… z niej korzystaÄ‡.
 */
 DECLARE
-    v_years NUMBER;
+    v_legal_age DATE;
 BEGIN
-    v_years := TRUNC(MONTHS_BETWEEN(SYSDATE, :NEW.data_urodzenia) / 12);
+    v_legal_age := ADD_MONTHS(:NEW.data_urodzenia, 12*18);
 
-    IF v_years < 18 THEN
+    IF v_legal_age >= TRUNC(SYSDATE) THEN
         RAISE_APPLICATION_ERROR(-20001, 'User must be at least 18 years old.');
     END IF;
 END;
 /
 
+
 CREATE OR REPLACE FUNCTION color_description(barwa_ebc IN NUMBER) RETURN VARCHAR2 IS
 /*
-Funkcja konwertuj¹ca barwê piwa mierzon¹ w EBC (European Brewery Convention) na zrozumia³y przez u¿ytkownika kolor.
-@TODO - zmienic na polskie kolory, plus lepiej podzieliæ skalê kolorów bo nie jest najlepsza
+Funkcja konwertujÄ…ca barwÄ™ piwa mierzonÄ… w EBC (European Brewery Convention) na zrozumiaÅ‚y przez uÅ¼ytkownika kolor.
 */
 BEGIN
     RETURN CASE
-        WHEN barwa_ebc >= 0 THEN 'Very light'
-        WHEN barwa_ebc >= 4 THEN 'Light'
-        WHEN barwa_ebc >= 6 THEN 'Pale gold'
-        WHEN barwa_ebc >= 8 THEN 'Straw'
-        WHEN barwa_ebc >= 12 THEN 'Medium gold'
-        WHEN barwa_ebc >= 16 THEN 'Deep gold'
-        WHEN barwa_ebc >= 20 THEN 'Amber'
-        WHEN barwa_ebc >= 26 THEN 'Deep amber'
-        WHEN barwa_ebc >= 33 THEN 'Copper'
-        WHEN barwa_ebc >= 39 THEN 'Deep copper'
-        WHEN barwa_ebc >= 47 THEN 'Brown'
-        WHEN barwa_ebc >= 57 THEN 'Dark brown'
-        WHEN barwa_ebc >= 69 THEN 'Very dark brown'
-        WHEN barwa_ebc >= 79 THEN 'Black'
+        WHEN barwa_ebc >= 0 THEN 'SÅ‚omokowy'
+        WHEN barwa_ebc >= 4 THEN 'Jasny zÃ³Å‚ty'
+        WHEN barwa_ebc >= 6 THEN 'Å»Ã³Å‚ty'
+        WHEN barwa_ebc >= 8 THEN 'ZÅ‚oty'
+        WHEN barwa_ebc >= 12 THEN 'Jasny bursztyn'
+        WHEN barwa_ebc >= 16 THEN 'Bursztynowy'
+        WHEN barwa_ebc >= 20 THEN 'GÅ‚Ä™boki bursztyn'
+        WHEN barwa_ebc >= 26 THEN 'Miedziany'
+        WHEN barwa_ebc >= 33 THEN 'Ciemny Miedziany'
+        WHEN barwa_ebc >= 39 THEN 'JasnobrÄ…zowy'
+        WHEN barwa_ebc >= 47 THEN 'BrÄ…zowy'
+        WHEN barwa_ebc >= 57 THEN 'CiemnobrÄ…zowy'
+        WHEN barwa_ebc >= 69 THEN 'Bardzo ciemny brÄ…z'
+        WHEN barwa_ebc >= 79 THEN 'Czarny opalizujÄ…cy'
         ELSE 'Unknown'
     END;
 END;
