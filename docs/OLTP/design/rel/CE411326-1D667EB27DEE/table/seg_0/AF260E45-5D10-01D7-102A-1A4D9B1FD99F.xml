@@ -41,8 +41,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10 CHAR</dataTypeSize>
-<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -68,6 +68,27 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="85B4AD8A-0EB5-B779-146C-6BDA660C7768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="778371B7-290C-1136-7763-5200CB115F29" name="konta_id_konta_typ_UK">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:00:39 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="332077DB-85D7-29A8-659F-21745901D896"/>
+<colUsage columnID="CE4039A3-4563-0739-09AB-92A147488F16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A63F158B-FE47-6557-4BC0-9E75C840EF9A" name="konta_id_konta_typ_IDX">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 19:57:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="332077DB-85D7-29A8-659F-21745901D896"/>
+<colUsage columnID="CE4039A3-4563-0739-09AB-92A147488F16"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

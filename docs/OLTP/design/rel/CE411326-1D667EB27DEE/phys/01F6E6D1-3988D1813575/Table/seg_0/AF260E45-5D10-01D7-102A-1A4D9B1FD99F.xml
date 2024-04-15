@@ -5,9 +5,11 @@
 <ownerDesignName>design</ownerDesignName>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>F8CCCCA3-930C-79C1-B612-0F0CBA17D2F2</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="id_konta" id="332077DB-85D7-29A8-659F-21745901D896">
 <createdBy>jakub</createdBy>
@@ -25,6 +27,13 @@
 <ownerDesignName>design</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="konta_id_konta_typ_IDX" id="A63F158B-FE47-6557-4BC0-9E75C840EF9A">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 19:57:59 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="konta_PK" id="AEC706EC-F856-EC99-503F-3A2D1A7CBE01">
 <createdBy>jakub</createdBy>
@@ -37,6 +46,12 @@
 <UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="konta_nazwa_UK" id="5CC2C137-8A43-8414-6745-039396253A04">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-06 17:27:16 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="konta_id_konta_typ_UK" id="778371B7-290C-1136-7763-5200CB115F29">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:00:39 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <indexSort>SORTED</indexSort>
 </UniqueKey>

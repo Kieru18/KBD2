@@ -5,9 +5,11 @@
 <ownerDesignName>design</ownerDesignName>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>F8CCCCA3-930C-79C1-B612-0F0CBA17D2F2</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="id_stylu" id="057B9CC8-409D-CBF2-831E-C1EC71FCA306">
 <createdBy>jakub</createdBy>

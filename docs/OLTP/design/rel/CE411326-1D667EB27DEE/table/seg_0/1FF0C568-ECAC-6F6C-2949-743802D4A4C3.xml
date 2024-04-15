@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FF0C568-ECAC-6F6C-2949-743802D4A4C3" name="recenzje">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Oceny liczbowe i komentarz wystawiany piwom przez piwoszy]]></commentInRDBMS>
 <generatorID>B466B761-743B-5094-027E-29081D8DD672</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <ordsAlias>recenzja</ordsAlias>
@@ -9,6 +10,88 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numer_recenzji" id="2F56B8DD-365D-0AAF-EB3B-36B8831A6672">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:07:10 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="id_browaru" id="905A9E47-CE42-1082-7E0B-80A20F007FCF">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>99BBA3BF-577B-0F46-1A81-FFBD744C65C5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="FD89310F-42B6-1820-E109-3D00865B8E1F"/>
+</associations>
+</Column>
+<Column name="numer_piwa" id="516F0FF3-DF22-EE18-603B-4D10AC683EB9">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>3604BA49-DC56-2B2F-1531-AC42A3E6F530</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="522AA55F-27E9-A98A-D1C2-5229CA6309D8"/>
+</associations>
+</Column>
+<Column name="id_konta" id="E25E3472-8165-11CB-9287-3F4EA30A70E7">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>BF380D33-48DF-1446-7BEB-06DE62FE18D9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F560545F-CDDE-1D96-F0CD-F55096852F84" referredColumn="332077DB-85D7-29A8-659F-21745901D896"/>
+</associations>
+</Column>
+<Column name="typ_konta" id="34E46C9C-2EA5-728A-1B97-291E3D3AA07A">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:04:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Typ konta to piwosz czyli  typ_konta='s']]></commentInRDBMS>
+<ownerDesignName>design</ownerDesignName>
+<constraintName>recenzje_typ_konta_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="typ_konta=&apos;s&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F560545F-CDDE-1D96-F0CD-F55096852F84" referredColumn="CE4039A3-4563-0739-09AB-92A147488F16"/>
+</associations>
+</Column>
 <Column name="czas_recenzji" id="4AE5151F-0698-186F-4830-9CC4B4C01ECC">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
@@ -69,54 +152,6 @@
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="id_uzytkownika" id="E25E3472-8165-11CB-9287-3F4EA30A70E7">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>BF380D33-48DF-1446-7BEB-06DE62FE18D9</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F6D874B4-4DB0-DDB6-808E-5FB48A854D68" referredColumn="332077DB-85D7-29A8-659F-21745901D896"/>
-</associations>
-</Column>
-<Column name="id_browaru" id="905A9E47-CE42-1082-7E0B-80A20F007FCF">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>99BBA3BF-577B-0F46-1A81-FFBD744C65C5</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="FD89310F-42B6-1820-E109-3D00865B8E1F"/>
-</associations>
-</Column>
-<Column name="numer_piwa" id="516F0FF3-DF22-EE18-603B-4D10AC683EB9">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>3604BA49-DC56-2B2F-1531-AC42A3E6F530</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E1719B56-8B82-9FAF-5705-7FAD336B31C2" referredColumn="522AA55F-27E9-A98A-D1C2-5229CA6309D8"/>
-</associations>
-</Column>
 <Column name="komentarz" id="BCCFC34E-3E1E-5382-23F5-AAD8AF47F53D">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
@@ -141,9 +176,9 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E25E3472-8165-11CB-9287-3F4EA30A70E7"/>
 <colUsage columnID="905A9E47-CE42-1082-7E0B-80A20F007FCF"/>
 <colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
+<colUsage columnID="2F56B8DD-365D-0AAF-EB3B-36B8831A6672"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="60163655-7888-901A-442E-40DCB84FB340" name="recenzje_piwa_FK_I">
@@ -168,15 +203,15 @@
 <colUsage columnID="516F0FF3-DF22-EE18-603B-4D10AC683EB9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2341BAC9-F219-2681-9DB3-CCBEF32008E8" name="recenzje_uzytkownicy_FK">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>4482D3B4-4692-E674-A262-96EBE4DF296B</generatorID>
+<ind_PK_UK id="78F5121D-FF7F-C43F-44D0-9C631C450A21" name="recenzje_konta_FK">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:07:10 UTC</createdTime>
 <ownerDesignName>design</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E25E3472-8165-11CB-9287-3F4EA30A70E7"/>
+<colUsage columnID="34E46C9C-2EA5-728A-1B97-291E3D3AA07A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

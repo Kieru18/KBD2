@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ClusterOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ClusterOraclev10g" name="konta_grono" directorySegmentName="seg_0" id="5179F6B1-95CE-9295-001F-76E9AFB92097">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:51:26 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<tableSpace>F8CCCCA3-930C-79C1-B612-0F0CBA17D2F2</tableSpace>
+<columnsCollection>
+<Column class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ClusterColumnOraclev10g" name="CC1" id="1D4B2089-8447-9A0D-E5BE-8E5869293577">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:54:10 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+</Column>
+</columnsCollection>
+<indexesCollection>
+<Index class="oracle.dbtools.crest.model.design.storage.oracle.v10g.ClusterIndexOraclev10g" name="grono_IDX" id="FDEBC726-7A86-3513-EF34-3B81C2501A5A">
+<createdBy>szlukawski</createdBy>
+<createdTime>2024-04-15 20:53:45 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
+<tableSpace>F8CCCCA3-930C-79C1-B612-0F0CBA17D2F2</tableSpace>
+</Index>
+</indexesCollection>
+</ClusterOraclev10g>

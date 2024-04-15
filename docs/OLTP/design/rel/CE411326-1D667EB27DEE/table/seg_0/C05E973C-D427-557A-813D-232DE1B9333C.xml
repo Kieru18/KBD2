@@ -2,6 +2,7 @@
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05E973C-D427-557A-813D-232DE1B9333C" name="piwa">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Piwa dostępne do oceny w systemie Recenz.io]]></commentInRDBMS>
 <generatorID>90832610-F665-F615-CD6A-68B4985333B1</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <ordsAlias>piwo</ordsAlias>
@@ -21,6 +22,23 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="id_browaru" id="FD89310F-42B6-1820-E109-3D00865B8E1F">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADFBD239-4606-5527-7E98-B1BFB5449D4C" referredColumn="F0343C4C-F2C1-2E69-F03D-8BBC7174C9DD"/>
+</associations>
 </Column>
 <Column name="nazwa" id="F32F9BE4-8DBF-9668-D10D-F8CDF3E1C841">
 <createdBy>jakub</createdBy>
@@ -50,6 +68,7 @@
 <Column name="zawartosc_alkoholu" id="1CEAF5F8-B90C-66B0-8068-8C02C6048AFB">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zawartość alkoholu mierzona w ABV - procentach objętościowych]]></commentInRDBMS>
 <generatorID>CAE5809D-BA6B-E3F3-2B48-0EF02EC4EAA0</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,6 +82,7 @@
 <Column name="zawartosc_ekstraktu" id="AE4BF18E-5C3E-078F-DA8B-236A95AD192F">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zawartość ekstraktu mierzona w stopniach Ballinga]]></commentInRDBMS>
 <generatorID>C695723D-EB5F-2AA3-6AB1-E359226D3371</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -76,6 +96,7 @@
 <Column name="goryczka" id="F3DB041A-22C4-333D-E469-BAA5D1B525D6">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Goryczka wyrażona w IBU (International Bitterness Unit)]]></commentInRDBMS>
 <generatorID>C7D30262-27FC-ED8F-D7DE-6E503CDF6827</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -89,6 +110,7 @@
 <Column name="barwa" id="95C8494C-CA4D-1606-B0BF-ECA978754A41">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Barwa wyrażona w EBC (European Brewery Convention)]]></commentInRDBMS>
 <generatorID>D55C3C46-30E9-9363-0DA3-1828AC32EFBB</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -110,22 +132,6 @@
 <logicalDatatype>LOGDT029</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_browaru" id="FD89310F-42B6-1820-E109-3D00865B8E1F">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>C9D7C603-6AC9-DC21-D5D9-CFFD6EA64014</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="ADFBD239-4606-5527-7E98-B1BFB5449D4C" referredColumn="F0343C4C-F2C1-2E69-F03D-8BBC7174C9DD"/>
-</associations>
 </Column>
 <Column name="id_stylu" id="057B9CC8-409D-CBF2-831E-C1EC71FCA306">
 <createdBy>jakub</createdBy>

@@ -22,18 +22,6 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nazwa" id="C9A3C1C8-3EB7-F3D8-430A-B18B50F8F61B">
-<createdBy>jakub</createdBy>
-<createdTime>2024-04-05 20:16:14 UTC</createdTime>
-<generatorID>97C955F5-60F2-2BB4-2BFD-4F91B86CB161</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>35</dataTypeSize>
-<ownDataTypeParameters>35,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="kod_kraju" id="0C25FC35-F694-0F70-19A5-EE06027C9198">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
@@ -49,6 +37,18 @@
 <associations>
 <colAssociation fkAssociation="2482C3CD-2E91-44C6-F6EF-4F12DB84FB91" referredColumn="F79FB56A-0868-2320-520F-1317F1B7AFA5"/>
 </associations>
+</Column>
+<Column name="nazwa" id="C9A3C1C8-3EB7-F3D8-430A-B18B50F8F61B">
+<createdBy>jakub</createdBy>
+<createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<generatorID>97C955F5-60F2-2BB4-2BFD-4F91B86CB161</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

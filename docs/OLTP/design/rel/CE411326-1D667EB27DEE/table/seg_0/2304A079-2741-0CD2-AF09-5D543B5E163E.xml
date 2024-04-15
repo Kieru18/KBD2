@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2304A079-2741-0CD2-AF09-5D543B5E163E" name="uzytkownicy">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2304A079-2741-0CD2-AF09-5D543B5E163E" name="piwosze">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Użytkownicy prywatni aplikacji Recenz.io]]></commentInRDBMS>
 <generatorID>D21EFC19-0E9B-84B2-56CA-1BAB04C77FE9</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <ordsAlias>zwykli_uzytkownicy</ordsAlias>
@@ -102,7 +103,7 @@
 <colUsage columnID="5BAEA0BB-D871-36A6-8262-023CF47E16D2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E5B6A6EE-90E1-7464-A198-DB581CDFF769" name="uzytkownicy_konta_FK">
+<ind_PK_UK id="E5B6A6EE-90E1-7464-A198-DB581CDFF769" name="piwosze_konta_FK">
 <createdBy>jakub</createdBy>
 <createdTime>2024-04-05 20:16:14 UTC</createdTime>
 <generatorID>F5F195C0-09E9-4FA7-9D5E-1C323D77F923</generatorID>
