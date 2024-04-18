@@ -249,12 +249,14 @@ INSERT INTO kraje (kod_kraju, nazwa) VALUES ('ZWE', 'Zimbabwe');
 INSERT INTO kraje (kod_kraju, nazwa) VALUES ('ARE', 'Zjednoczone Emiraty Arabskie'); 
 
 -- style
+
 INSERT INTO style (nazwa, opis) VALUES ('Witbier', XMLTYPE('<opis>Lekkie, orzeŸwiaj¹ce, zmêtnione, wysokonasycone, bardzo jasne ale o przyjemnym owocowo-przyprawowym aromacie i niskiej goryczce. Du¿y udzia³ nies³odowanej pszenicy wp³ywa na znaczne zmêtnienie oraz nadaje piwu charakterystyczny smak. Barwa, poziom goryczki, zmêtnienie i wysycenie podobne jak w przypadku bawarskiego weissbiera. Aromat i smak owocowy i przyprawowy witbiera pochodz¹ bardziej z u¿ytych dodatków ni¿ z procesu fermentacji. Charakter przyprawowy jest bardziej pieprzowy, ni¿ goŸdzikowy, a owocowoœæ ma bardziej cytrusowy ni¿ bananowo-gruszkowy charakter z jakim spotkamy siê w weissbierze.</opis>'));
 INSERT INTO style (nazwa, opis) VALUES ('AIPA', XMLTYPE('<opis>Zdecydowanie chmielowe, nowofalowe, jasne, pe³ne, wytrawne, gorzkie amerykañskie piwo górnej fermentacji. Ten opis odnosi siê do klasycznej, jasnej, czystej i zdominowanej przez chmiel interpretacji stylu, nazywanej czasem west coast IPA, dla odró¿nienia od bardziej zbalansowanych IPA popularnych na wschodnim wybrze¿u USA (east coast IPA) Piwa bardziej s³odowe, ciemniejsze lub o wyraŸnym charakterze pochodz¹cym z fermentacji opisane s¹ w innych pozycjach tego Kompendium.</opis>'));
 
 -- browary
 INSERT INTO browary (nazwa, data_zalozenia, kod_kraju) VALUES ('Pinta', TO_DATE('2011-05-07', 'YYYY-MM-DD'), 'POL');
 INSERT INTO browary (nazwa, data_zalozenia, kod_kraju) VALUES ('Browar Kormoran', TO_DATE('1993-03-07', 'YYYY-MM-DD'), 'POL');
+INSERT INTO browary (nazwa, data_zalozenia, kod_kraju) VALUES ('Browar Amber', TO_DATE('1994-11-24', 'YYYY-MM-DD'), 'POL');
 
 -- konta
 INSERT INTO konta (nazwa, typ) VALUES ('Gerwazy', 'piwowar');
