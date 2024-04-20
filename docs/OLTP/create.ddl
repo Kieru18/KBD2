@@ -33,7 +33,7 @@ ALTER TABLE konta ADD CONSTRAINT konta_nazwa_uk UNIQUE ( nazwa );
 
 CREATE TABLE kraje (
     kod_kraju VARCHAR2(3 CHAR) NOT NULL,
-    nazwa     VARCHAR2(56 CHAR) NOT NULL,
+    nazwa     VARCHAR2(63 CHAR) NOT NULL,
     CONSTRAINT kraje_pk PRIMARY KEY ( kod_kraju )
 ) ORGANIZATION INDEX 
   TABLESPACE KBD2_3;
@@ -345,7 +345,7 @@ CREATE OR REPLACE VIEW moje_recenzje_piwa AS
         JOIN browary b on p.id_browaru = b.id_browaru
         JOIN konta k on r.id_uzytkownika = k.id_konta
 WHERE k.id_konta = USER;
-
-COMMENT ON COLUMN moje_recenzje_piwa IS 'Perspektywa umożliwiająca użytkownikowi przejrzenie (tylko) własnych ocen piw.';
-
 /
+
+COMMENT ON TABLE moje_recenzje_piwa IS 'Perspektywa umożliwiająca użytkownikowi przejrzenie (tylko) własnych ocen piw.';
+
