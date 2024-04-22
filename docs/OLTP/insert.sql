@@ -272,14 +272,14 @@ commit;
 
 
 -- konta
-INSERT INTO konta (nazwa, typ) VALUES ('Gerwazy', 'piwowar');
-INSERT INTO konta (nazwa, typ) VALUES ('Talar', 'uzytkownik');
+INSERT INTO konta (nazwa, typ) VALUES ('Talar', 's');
+INSERT INTO konta (nazwa, typ) VALUES ('Gerwazy', 'w');
 
 commit;
 
 
 -- piwowarzy
-INSERT INTO piwowarzy (id_konta, id_browaru) VALUES (1, 1);
+INSERT INTO piwowarzy (id_konta, id_browaru) VALUES (2, 1);
 
 commit;
 
@@ -292,7 +292,7 @@ commit;
 
 
 -- uzytkownicy
-INSERT INTO uzytkownicy (id_konta, data_urodzenia, plec, numer_miejscowosci, kod_kraju) VALUES (2, TO_DATE('2002-07-05', 'YYYY-MM-DD'), 'M', 1, 'POL');
+INSERT INTO piwosze (id_konta, data_urodzenia, plec, numer_miejscowosci, kod_kraju) VALUES (1, TO_DATE('2002-07-05', 'YYYY-MM-DD'), 'M', 1, 'POL');
 
 commit;
 
@@ -309,8 +309,8 @@ commit;
 
 
 -- recenzje
-INSERT INTO recenzje (czas_recenzji, ocena_ogolna, smak, wyglad, aromat, id_uzytkownika, id_browaru, numer_piwa, komentarz)
-VALUES (TO_TIMESTAMP('2019-03-08 15:57:11020', 'YYYY-MM-DD HH24:MI:SSFF3'), 8, 8, 8, 9, 1, 1, 1, 'Powrót do klasyki po paru dobrych latach. Po wielu negatywnych opiniach które s³ysza³em o tym piwie, ¿e siê zepsu³o, ¿e jest strasznie karmelowe, itp. Muszê stwierdziæ, ¿e spodziewa³em siê du¿o gorszego piwa. Co prawda Atak nie jest tak dobry, jak za swoich najlepszych lat, ale jest to dalej fantastyczne piwo. Co do karmelu, to faktycznie jest go sporo, choæ znakomicie ³¹czy siê z mocn¹ i zalegaj¹c¹ goryczk¹. Karmel wspaniale tak¿e ³¹czy siê w aromacie i smaku z nutami chmielowymi tworz¹c \"zabójcz¹\" mieszankê. Pijalnoœæ bardzo dobra, piwo nie ma wad (choæ mo¿e lekki diacetyl siê pojawia). Fantastyczna rzecz.');
+INSERT INTO recenzje (id_browaru, numer_piwa, id_konta, typ_konta, czas_recenzji, ocena_ogolna, smak, wyglad, aromat, komentarz)
+VALUES (1, 1, 1, 's', TO_TIMESTAMP('2019-03-08 15:57:11020', 'YYYY-MM-DD HH24:MI:SSFF3'), 8, 8, 8, 9, 'Powrót do klasyki po paru dobrych latach. Po wielu negatywnych opiniach które s³ysza³em o tym piwie, ¿e siê zepsu³o, ¿e jest strasznie karmelowe, itp. Muszê stwierdziæ, ¿e spodziewa³em siê du¿o gorszego piwa. Co prawda Atak nie jest tak dobry, jak za swoich najlepszych lat, ale jest to dalej fantastyczne piwo. Co do karmelu, to faktycznie jest go sporo, choæ znakomicie ³¹czy siê z mocn¹ i zalegaj¹c¹ goryczk¹. Karmel wspaniale tak¿e ³¹czy siê w aromacie i smaku z nutami chmielowymi tworz¹c \"zabójcz¹\" mieszankê. Pijalnoœæ bardzo dobra, piwo nie ma wad (choæ mo¿e lekki diacetyl siê pojawia). Fantastyczna rzecz.');
 
 commit;
 
