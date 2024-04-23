@@ -1,3 +1,10 @@
+-- Cluster
+CREATE CLUSTER konta_cluster
+    (id_konta NUMBER(4))
+    SIZE 1024
+    HASHKEYS 100
+    TABLESPACE KBD2_1;
+
 -- Tables, PKs, indexes, UK, declarative constraints (checks, UKs), comments
 
 CREATE TABLE browary (
@@ -20,7 +27,7 @@ CREATE TABLE konta (
     id_konta NUMBER(4) NOT NULL,
     nazwa    VARCHAR2(15 CHAR) NOT NULL,
     typ      CHAR(1 CHAR) NOT NULL
-) TABLESPACE KBD2_2;
+) CLUSTER konta_cluster (id_konta);
 
 COMMENT ON TABLE konta IS 'Konta wszystkich użytkowników (prywatnych i komercyjnych) systemu Recenz.io';
 
@@ -95,7 +102,7 @@ ALTER TABLE piwa ADD CONSTRAINT piwa_pk PRIMARY KEY ( id_browaru,
 CREATE TABLE piwowarzy (
     id_konta   NUMBER(4) NOT NULL,
     id_browaru NUMBER(4) NOT NULL
-) TABLESPACE KBD2_1;
+) CLUSTER konta_cluster (id_konta);
 
 COMMENT ON TABLE piwowarzy IS 'Użytkownicy komercyjni reprezentujący browary';
 
@@ -164,7 +171,7 @@ CREATE TABLE piwosze (
     plec               CHAR(1 CHAR) NOT NULL,
     numer_miejscowosci NUMBER(4) NOT NULL,
     kod_kraju          VARCHAR2(3 CHAR) NOT NULL
-) TABLESPACE KBD2_1;
+) CLUSTER konta_cluster (id_konta);
 
 COMMENT ON TABLE piwosze IS 'Użytkownicy prywatni aplikacji Recenz.io';
 
@@ -349,6 +356,7 @@ BEGIN
     :new.id_stylu := style_id_stylu_seq.nextval;
 END;
 /
+
 
 -- Views 
 

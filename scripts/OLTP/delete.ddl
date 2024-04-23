@@ -38,5 +38,12 @@ BEGIN
     EXECUTE IMMEDIATE v_sql;
   END LOOP;
 
+  -- Drop all clusters
+  FOR clstr IN (SELECT cluster_name FROM all_clusters WHERE owner = v_schema_owner) LOOP
+    v_object_name := clstr.cluster_name;
+    v_sql := 'DROP CLUSTER ' || v_object_name;
+    EXECUTE IMMEDIATE v_sql;
+  END LOOP;
+
 END;
 /
