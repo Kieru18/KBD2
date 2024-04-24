@@ -25,7 +25,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2304A079-2741-0CD2-AF09-5D543B5E163E" otype="Table" vid="6EFA72F9-2052-B5D8-8DA2-1186EBD29CE1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="370" y="769" width="352" height="177"/>
+<bounds x="360" y="779" width="388" height="188"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3DDC3768-E55E-94A2-57E2-8E4653825BBB" otype="Table" vid="446AFDB1-B0C1-9C5B-891C-017C816B972B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -33,7 +33,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8CA11071-5E66-A85E-237A-C47248AE8139" otype="Table" vid="E9C1458C-FABF-DCD1-3CBE-248639FC2D59">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="817" y="137" width="215" height="100"/>
+<bounds x="749" y="97" width="244" height="124"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="8F2C1C09-4E33-3A3C-D492-528C6E53BE88" otype="Note" vid="F87F742C-67B1-AB80-C52E-C172DEE3BB6B">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -51,11 +51,11 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C05E973C-D427-557A-813D-232DE1B9333C" otype="Table" vid="E398C8D2-1CEC-E233-978C-1BF1FB329C4F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="795" y="292" width="607" height="259"/>
+<bounds x="753" y="279" width="607" height="259"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="EB21A266-A556-3699-AF98-FEEA84AED5A2" otype="Table" vid="8816E19D-CBE0-0762-2649-28439FB4D282">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="357" y="362" width="253" height="151"/>
+<bounds x="374" y="372" width="253" height="151"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F2A3E41D-CC56-42E1-71BF-7CBF7B65D220" otype="Table" vid="CFB0A637-9AA5-56A7-A380-BF8A30B3C98E">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -68,8 +68,8 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="830" y="588"/>
-<point x="610" y="492"/>
+<point x="830" y="589"/>
+<point x="627" y="501"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2482C3CD-2E91-44C6-F6EF-4F12DB84FB91" otype="FKIndexAssociation" vid_source="446AFDB1-B0C1-9C5B-891C-017C816B972B" vid_target="CFB0A637-9AA5-56A7-A380-BF8A30B3C98E">
@@ -86,8 +86,8 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="924" y="237"/>
-<point x="924" y="292"/>
+<point x="873" y="221"/>
+<point x="873" y="279"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="6821FC5A-E0B1-894F-ECDC-2CEF6E377249" otype="FKIndexAssociation" vid_source="CFB0A637-9AA5-56A7-A380-BF8A30B3C98E" vid_target="6EFA72F9-2052-B5D8-8DA2-1186EBD29CE1">
@@ -96,7 +96,7 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <lineWidth>1</lineWidth>
 <points>
 <point x="792" y="857"/>
-<point x="722" y="857"/>
+<point x="748" y="857"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="ADB41897-063E-122B-5AD9-F413D199A127" otype="FKIndexAssociation" vid_source="042B4209-B2F9-F4E4-123C-EE32D56C7C72" vid_target="6EFA72F9-2052-B5D8-8DA2-1186EBD29CE1">
@@ -104,8 +104,8 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="282" y="803"/>
-<point x="370" y="803"/>
+<point x="282" y="808"/>
+<point x="360" y="808"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="ADFBD239-4606-5527-7E98-B1BFB5449D4C" otype="FKIndexAssociation" vid_source="8816E19D-CBE0-0762-2649-28439FB4D282" vid_target="E398C8D2-1CEC-E233-978C-1BF1FB329C4F">
@@ -113,8 +113,8 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="610" y="437"/>
-<point x="795" y="437"/>
+<point x="627" y="447"/>
+<point x="753" y="447"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C2378BC3-3B5E-345E-6A7D-0C8952809230" otype="FKIndexAssociation" vid_source="8816E19D-CBE0-0762-2649-28439FB4D282" vid_target="2C8B1F24-6F35-8717-9F57-6DB9D24666F5">
@@ -122,7 +122,7 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="483" y="513"/>
+<point x="483" y="523"/>
 <point x="483" y="589"/>
 </points>
 </Connector>
@@ -131,8 +131,8 @@ Recenz.io - Portal do recenzjonowania piwa</comment>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="795" y="323"/>
-<point x="504" y="323"/>
+<point x="753" y="316"/>
+<point x="504" y="316"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F4EB537D-703B-3F58-DC0E-A49249C8D5E3" otype="FKIndexAssociation" vid_source="042B4209-B2F9-F4E4-123C-EE32D56C7C72" vid_target="2C8B1F24-6F35-8717-9F57-6DB9D24666F5">
