@@ -1,4 +1,5 @@
 import re
+import os
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom.minidom import parseString
 
@@ -76,9 +77,12 @@ def parse_txt_to_xml(file_path):
     return pretty_xml
 
 
-file_path = 'Altbier.txt'
-xml_data = parse_txt_to_xml(file_path)
+current_directory = os.getcwd()
+txt_files = [file for file in os.listdir(current_directory) if file.endswith(".txt")]
 
-output_file_path = 'Altbier.xml'
-with open(output_file_path, 'w', encoding='utf-8') as output_file:
-    output_file.write(xml_data)
+for txt_file in txt_files:
+    txt_file_path = os.path.join(current_directory, txt_file)
+    xml_file_path = os.path.splitext(txt_file_path)[0] + ".xml"
+    xml_data = parse_txt_to_xml(txt_file_path)
+    with open(xml_file_path, 'w', encoding='utf-8') as output_file:
+        output_file.write(xml_data)
