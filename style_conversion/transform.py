@@ -1,37 +1,36 @@
 import re
-from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
+from xml.etree.ElementTree import Element, SubElement, tostring
+from xml.dom.minidom import parseString
 
 def parse_txt_to_xml(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
     
-    # Initialize XML structure
     root = Element('opis')
     
-    # Define patterns for sections we want to extract
     sections = {
-        'initial_extract': re.compile(r'^Ekstrakt początkowy:\s+(.+)$'),
-        'final_extract': re.compile(r'^Ekstrakt końcowy:\s+(.+)$'),
-        'alcohol_content': re.compile(r'^Zawartość alkoholu:\s+(.+)$'),
-        'bitterness': re.compile(r'^Goryczka:\s+(.+)$'),
-        'color': re.compile(r'^Barwa:\s+(.+)$'),
-        'style_characteristics': re.compile(r'^Wyróżniki stylu:\s+(.+)$'),
-        'history': re.compile(r'^Historia:\s+(.+)$'),
-        'aroma': re.compile(r'^Aromat:\s+(.+)$'),
-        'flavor': re.compile(r'^Smak:\s+(.+)$'),
-        'bitterness_description': re.compile(r'^Goryczka:\s+(.+)$'),
-        'appearance': re.compile(r'^Wygląd:\s+(.+)$'),
-        'mouthfeel': re.compile(r'^Odczucie w ustach:\s+(.+)$'),
-        'ingredients_and_technology': re.compile(r'^Surowce i technologia:\s+(.+)$'),
-        'commercial_examples': re.compile(r'^Przykłady komercyjne:\s+(.+)$'),
-        'comments': re.compile(r'^Komentarz:\s+(.+)$'),
-        'serving_temperature': re.compile(r'^Temperatura serwowania:\s+(.+)$'),
-        'glass': re.compile(r'^Szkło:\s+(.+)$')
+        'ekstrakt_poczatkowy': re.compile(r'^Ekstrakt początkowy:\s+(.+)$'),
+        'ekstrakt_koncowy': re.compile(r'^Ekstrakt końcowy:\s+(.+)$'),
+        'zawartosc_alkoholu': re.compile(r'^Zawartość alkoholu:\s+(.+)$'),
+        'goryczka': re.compile(r'^Goryczka:\s+(.+)$'),
+        'barwa': re.compile(r'^Barwa:\s+(.+)$'),
+        'wyrozniki_stylu': re.compile(r'^Wyróżniki stylu:\s+(.+)$'),
+        'historia': re.compile(r'^Historia:\s+(.+)$'),
+        'aromat': re.compile(r'^Aromat:\s+(.+)$'),
+        'smak': re.compile(r'^Smak:\s+(.+)$'),
+        'opis_goryczki': re.compile(r'^Goryczka:\s+(.+)$'),
+        'wyglad': re.compile(r'^Wygląd:\s+(.+)$'),
+        'odczucie_w_ustach': re.compile(r'^Odczucie w ustach:\s+(.+)$'),
+        'surowce_i_technologia': re.compile(r'^Surowce i technologia:\s+(.+)$'),
+        'przyklady_komercyjne': re.compile(r'^Przykłady komercyjne:\s+(.+)$'),
+        'komentarz': re.compile(r'^Komentarz:\s+(.+)$'),
+        'temperatura_serwowania': re.compile(r'^Temperatura serwowania:\s+(.+)$'),
+        'szklo': re.compile(r'^Szkło:\s+(.+)$')
     }
 
     current_section = None
     buffer = []
-    skip_sections = ['author', 'published', 'aroma_intensity']
+    skip_sections = ['autor', 'data_publikacji', 'tabela_natezen']
 
     for line in lines:
         line = line.strip()
@@ -64,17 +63,19 @@ def parse_txt_to_xml(file_path):
     # Handle the "Skrót" section separately
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
-        skrot_match = re.search(r'Barwa:\s+(.+?)Wyróżniki stylu:', content, re.DOTALL)
+        skrot_match = re.search(r'Barwa:\s+.+?(\n.+?)(?=\nWyróżniki stylu:)', content, re.DOTALL)
         if skrot_match:
             skrot_text = skrot_match.group(1).strip()
-            SubElement(root, 'Skrot').text = skrot_text
+            SubElement(root, 'skrot').text = skrot_text
 
-    # Convert the XML to a formatted string
-    xml_data = tostring(root, encoding='unicode', pretty_print=True)
+    # Create a pretty XML string
+    rough_string = tostring(root, encoding='utf-8')
+    reparsed = parseString(rough_string)
+    pretty_xml = reparsed.toprettyxml(indent="  ")
+    
+    return pretty_xml
 
-    return xml_data
 
-# Test the function
 file_path = 'Altbier.txt'
 xml_data = parse_txt_to_xml(file_path)
 
